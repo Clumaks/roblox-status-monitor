@@ -6,7 +6,7 @@ const USER_ID = "569802216";
 
 app.get("/", async (req, res) => {
   try {
-    const response = await fetch(https://presence.roblox.com/v1/presence/users, {
+    const response = await fetch("https://presence.roblox.com/v1/presence/users", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ userIds: [USER_ID] })
